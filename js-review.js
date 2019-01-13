@@ -38,3 +38,16 @@ function countBs(sentence){
 }
 
 countBs("Brooks was from Boston.");
+
+function countChar(sentence, character){
+    console.log(sentence);
+    var numChars = 0;
+    for(var i = 0; i < sentence.length-1; i++){
+        if (sentence.charAt(i) == character){
+            numChars++;
+        }
+    }
+    console.log("Number of " + character + "'s: " + numChars);
+}
+
+countChar("Brooks was from Boston","o");
