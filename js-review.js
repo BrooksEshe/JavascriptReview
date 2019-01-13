@@ -25,3 +25,16 @@ function FizzBuzz(){
 }
 
 FizzBuzz();
+
+function countBs(sentence){
+    console.log(sentence);
+    var numBs = 0;
+    for(var i = 0; i < sentence.length-1; i++){
+        if (sentence.charAt(i) == "B"){
+            numBs++;
+        }
+    }
+    console.log("Number of Bs: " + numBs)
+}
+
+countBs("Brooks was from Boston.");
