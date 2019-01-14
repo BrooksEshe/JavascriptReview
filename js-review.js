@@ -26,19 +26,14 @@ function FizzBuzz(){
 
 FizzBuzz();
 
+//countBs using countChar
 function countBs(sentence){
-    console.log(sentence);
-    var numBs = 0;
-    for(var i = 0; i < sentence.length-1; i++){
-        if (sentence.charAt(i) == "B"){
-            numBs++;
-        }
-    }
-    console.log("Number of Bs: " + numBs)
+    countChar(sentence, "B");
 }
 
 countBs("Brooks was from Boston.");
 
+//counts number of specified char in an sentence
 function countChar(sentence, character){
     console.log(sentence);
     var numChars = 0;
